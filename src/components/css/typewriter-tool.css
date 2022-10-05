@@ -1,0 +1,37 @@
+.tw-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+.tw-header h1{
+    font-size: 4em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-family: 'Cairo', sans-serif;;
+    color: aliceblue;
+    margin-bottom: 0.5em;
+}
+
+.Typewriter__wrapper {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    font-family: 'Chakra Petch', sans-serif;
+    color: aliceblue;
+}
+
+.Typewriter__cursor {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    font-family: 'Chakra Petch', sans-serif;
+    color: orange;
+}
+/* 
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Permanent Marker', cursive; */

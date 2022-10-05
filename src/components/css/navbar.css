@@ -1,0 +1,12 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0);  
+}
+
+.navbar-item {
+    color: white;
+}
+
+.navbar.is-fixed-top {
+    right: 55vh;
+    left: 55vh;
+}

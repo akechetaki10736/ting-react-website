@@ -1,0 +1,19 @@
+.columns.bg-image {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.bg-image {
+    background-image: url("../../../public/earth.jpg");
+    background-size: cover;
+    background-position: top center;
+    height: 107vh;
+}
+
+.test {
+    position: relative;
+    background-color: white;
+}
+
+

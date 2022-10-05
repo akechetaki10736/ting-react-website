@@ -1,19 +1,66 @@
+import 'bulma/css/bulma.css';
+import './components/css/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import NavBar from './components/navbar';
+import TypewriterTool from './components/typewriter-tool';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App = () => {
+    return (
+        <div className='columns bg-image'>
+            <div className='column'>
+                <NavBar />
+                <TypewriterTool />
+            </div>
+            <div className='colums'>
+                <div className='column test'>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi dolor nisi impedit vel eveniet quae porro sunt! Fugiat tenetur quos possimus similique! Ipsum quod eos, quo aspernatur aliquid incidunt sint!
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const rootDiv = document.querySelector('#root')!;
+
+if (rootDiv) {
+    const root = ReactDOM.createRoot(rootDiv);
+    root.render(<App />);
+}
+
+    // return (
+    //     <div className='columns bg-image'>
+    //         <div className='column'>
+    //             <NavBar />
+    //             <div className='columns'>
+    //                 <div className='colum typewriter-wrapper'>
+                        
+    //                 </div>
+    //             </div>
+    //         </div>
+            
+    //         <div className='typewriter'>
+    //             <h1>Hello, I'm Ting.</h1>
+    //         </div>
+    //     </div>
+    // );
+
+
+//     <div className='columns bg-image'>
+//     <div className='column'>
+//         <NavBar />
+//         <div className='columns'>
+//             <div className='column typewriter-wrapper'>
+//                 <div className='typewriter'>
+//                     <span>
+//                         <h1>Hello, I'm Ting.</h1>
+//                     </span>
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+    
+// </div>
