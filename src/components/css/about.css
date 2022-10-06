@@ -1,0 +1,83 @@
+/* .about {
+    display: flex;
+    flex-wrap: ;
+    margin-top: 10vh;
+    background-color: white;
+} */
+
+
+/* -------Left Panel---------- */
+.box {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    margin: 0 25%;
+    width: 50%;
+    height: 65vh;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #a98467;
+    background-color: #ddb892;
+    padding: 2em 0;
+}
+
+.pgbars {
+    width: 45%;
+}
+
+.progress-container:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    line-height: 1em;
+
+}
+
+.progress-container {
+    font-size: 0.5em;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: 2em;
+}
+
+.pgbar {
+    /* margin-top: 0.001em; */
+}
+
+.skill-name {
+    font-size: 0.5em;
+    font-weight: 300;
+    font-family: 'JetBrains Mono', monospace;
+    margin-right: 100%;
+}
+
+/* -------Right Panel---------- */
+
+.about {
+    top: 0;
+    width: 50%;
+    margin-left: 1em;
+}
+
+.about .meesage-heder {
+    background-color: #503a2b;
+    color: black;
+}
+
+.about .meesage-heder p {
+    padding-left: 2em;
+}
+
+.about .message-body {
+    background-color: #b08968;
+}
+.about .message-body h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Permanent Marker', cursive;
+}
+
