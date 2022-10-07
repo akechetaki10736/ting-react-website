@@ -2,11 +2,15 @@
     background-color: rgba(255, 255, 255, 0);  
 }
 
+.navbar.not-at-top {
+    background-color: rgb(0, 0, 0);
+}
+
 .navbar-item {
     color: white;
 }
 
 .navbar.is-fixed-top {
-    right: 27.5vw;
-    left: 27.5vw;
+    padding-right: 27.5vw;
+    padding-left: 27.5vw;
 }

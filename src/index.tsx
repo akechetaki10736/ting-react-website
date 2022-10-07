@@ -5,9 +5,11 @@ import NavBar from './components/navbar';
 import TypewriterTool from './components/typewriter-tool';
 import About from './components/about';
 import AboutCyber from './components/about-cyber';
-
+import Work from './components/work';
+import Contact from './components/contact';
 
 const App = () => {
+
     return (
         <div>
             <div className='columns bg-image'>
@@ -19,6 +21,16 @@ const App = () => {
             <div className='columns'>
                 <div className='column'>
                     <AboutCyber />
+                </div>
+            </div>
+            <div className='columns'>
+                <div className='column'>
+                    <Work />
+                </div>
+            </div>
+            <div className='columns'>
+                <div className='column'>
+                    <Contact />
                 </div>
             </div>
         </div>

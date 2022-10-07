@@ -9,6 +9,7 @@
 
 .column {
   padding: 0;
+  width: 100vw;
 }
 
 .bg-image {

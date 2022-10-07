@@ -28,7 +28,7 @@ const AboutCyber: React.FC = () => {
             const numberOfHash = set.value / 5;
             const numberOfDot = 20 - numberOfHash;
             return (
-                <Fragment>
+                <Fragment key={ set.skill }>
                     <p className='text--sm'>{ set.skill } <span className='process-amount'>{ set.value }</span>%</p>
                     <Typewriter onInit={(typewriter: TypewriterClass) => {
                         typewriter.pauseFor(Math.random() * 2000)
@@ -45,7 +45,7 @@ const AboutCyber: React.FC = () => {
     return (
         <div className='cyber-root'>
             <div className='terminal '>
-                <div className='scanline'></div>
+                {/* <div className='scanline'></div> */}
                 <div className='hydra'>
                     <div className='hydra_rebooting right-panel'>
                         <p>&lt; SKILL SET &frasl;&gt;</p>
@@ -53,10 +53,12 @@ const AboutCyber: React.FC = () => {
                         <p className='loading-bar'></p>
                     </div>
                     <div className='hydra_rebooting'>
+                        // TODO write about and add resume
                         <p>&lt; SYSTEM REBOOTING &frasl;&gt;</p>
                         <p className='text--sm'>HYDRA VER 2.1 SYS RECOVERY</p>
                         <p className='text--sm'>PROCESS: <span className='process-amount'>0</span>%</p>
                         <p className='text--sm'><span className='process-amount'>####</span></p>
+                        <button className='resume glitch'>Resume</button>
                     </div>
 
                 </div>
